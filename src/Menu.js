@@ -2,10 +2,9 @@ import React from 'react';
 
 export class Menu extends React.Component {
 
-  handleClick(e) {
+  handleClick = (e) => {
     var text = e.target.value;
     console.log(text);
-    // console.log(text);
     this.props.chooseVideo(text);
   }
 
